@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title></title>
+    <style>
+      #reactRoot{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left:0px;
+        top:0px;
+        bottom: 0px;
+      }
+      #turnpage{
+        display: block;
+        height: 100px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        background-color: green;
+      }
+      #turnpage a{
+        display: block;
+        border:1px solid #eeeeee;
+        height: 98px;
+        width: 100px;
+        float: left;
+      }
+      .indexpage{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        top:0px;
+        bottom: 0px;
+        font-size: 16px;
+        background-color: yellow;
+        z-index: 1;
+      }
+      .page{
+        position: relative;
+        transition: all 1s;
+        height: 567px;
+        right:0px;
+        font-size: 24px;
+        line-height: 576px;
+        text-align: center;
+        color: #ffffff; 
+        z-index: 2;
+        /*background-color: rgba(117,37,11,1);*/
+      }
+/*      .pageIn{
+        animation: pagemove 1s;
+      }
+      .pageOut{
+        animation: pagemoveOut 1s;
+      }  
+      @keyframes pagemoveOut{
+        from {right: 0px;}
+        to {right: 567px;}
+      }          
+      @keyframes pagemove{
+        from {right: 567px;}
+        to {right: 0px;}
+      }*/
+      .transitionWrapper-enter{
+        animation: moveIn 1s;
+      }
+      .transitionWrapper-leave{
+        /*animation: moveOut 1s;*/
+      }
+      .transitionWrapper-enter-active{
+        display: block;
+        position: absolute;
+        height: 567px;
+        top:0px;
+        left:-567px;
+        bottom:0px;
+        width: 100%;
+        z-index: 100;
+      }
+      .transitionWrapper-leave{
+        display: block;
+        position: absolute;
+        height: 567px;
+        top:0px;
+        left:0px;
+        bottom:0px;
+        width: 100%;
+        z-index: 99;
+      }
+      @keyframes moveIn{
+        from {left: -567px;}
+        to {left: 0px;}
+      }
+      @keyframes moveOut{
+        from {left: 0px;}
+        to {left: -567px;}        
+      }      
+      .FirstPage{
+        background-color: rgba(117,37,11,1);
+      }
+      .SecondPage{
+        background-color: rgba(15,13,115,1);
+      }
+      .containerstyle{
+        height: 567px;
+        width: 100%;
+        position: fixed;
+        top:0px;
+        left: 0px;
+        bottom: 0px;
+        background-color: #000;
+
+      }
+    </style>
+</head>
+<body>
+    <div id="reactRoot"></div>
+    <div id="turnpage">
+      <a class="main" href="/#/main">main</a>
+      <a class="about" href="/#/about">about</a>
+      <a class="index" href="/#">index</a>
+    </div>
+    <script src="./statice/js/lib/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript"src="./statice/js/bundle.js"></script>
+</html>

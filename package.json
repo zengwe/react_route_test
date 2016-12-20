@@ -1,0 +1,44 @@
+{
+  "name": "rout_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zengwe/react_route_test.git"
+  },
+  "author": "zengw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zengwe/react_route_test/issues"
+  },
+  "homepage": "https://github.com/zengwe/react_route_test#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-runtime": "^6.20.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "iscroll": "^5.2.0",
+    "jshint": "^2.9.4",
+    "jshint-loader": "^0.8.3",
+    "node-libs-browser": "^2.0.0",
+    "react": "^15.4.1",
+    "react-addons-css-transition-group": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-router": "^3.0.0",
+    "strip-loader": "^0.1.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0"
+  }
+}
